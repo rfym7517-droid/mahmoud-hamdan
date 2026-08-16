@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mahmoud Hamdan - Professional Web Developer Portfolio. Building modern, responsive, and interactive web solutions.">
+    <meta name="author" content="Mahmoud Hamdan">
+    <title>Mahmoud Hamdan | Web Developer Portfolio</title>
+    
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-spinner"></div>
+        <span class="loader-text">&lt;MahmoudHamdan /&gt;</span>
+    </div>
+
+   
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+   
+    <div class="bg-gradient-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="bg-grid-overlay"></div>
+    </div>
+
+    
+    <header class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>Mahmoud Hamdan<span class="logo-bracket"> /&gt;</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                    <li class="nav-item"><a href="#journey" class="nav-link">Journey</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark and light theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+   
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="status-badge fade-in">
+                        <span class="status-dot"></span>
+                        <span>Available for Web Projects</span>
+                    </div>
+                    <h1 class="hero-title fade-in">
+                        Hi, I'm <span class="highlight">Mahmoud Hamdan</span>
+                    </h1>
+                    <h2 class="hero-subtitle fade-in">
+                        I am a <span class="typing-text" id="typing-text"></span><span class="cursor-blink">|</span>
+                    </h2>
+                    <p class="hero-description fade-in">
+                        I build modern, responsive, interactive, and high-performance websites with clean code and thoughtful user experiences.
+                    </p>
+                    <div class="hero-cta fade-in">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>View My Work</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-visual fade-in">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span class="dot dot-red"></span>
+                                <span class="dot dot-yellow"></span>
+                                <span class="dot dot-green"></span>
+                            </div>
+                            <span class="window-title">developer.js</span>
+                        </div>
+                        <div class="window-body">
+                            <pre><code><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {
+  <span class="code-property">name</span>: <span class="code-string">'Mahmoud Hamdan'</span>,
+  <span class="code-property">role</span>: <span class="code-string">'Web Developer'</span>,
+  <span class="code-property">specialization</span>: <span class="code-string">'Frontend & Full Stack'</span>,
+  <span class="code-property">skills</span>: [
+    <span class="code-string">'HTML5'</span>, <span class="code-string">'CSS3'</span>, <span class="code-string">'JavaScript'</span>,
+    <span class="code-string">'PHP'</span>, <span class="code-string">'MySQL'</span>, <span class="code-string">'Git'</span>
+  ],
+  <span class="code-property">hardWorker</span>: <span class="code-boolean">true</span>,
+  <span class="code-property">quickLearner</span>: <span class="code-boolean">true</span>,
+  <span class="code-property">codeCleanliness</span>: <span class="code-number">100</span>
+};</code></pre>
+                        </div>
+                    </div>
+                   
+                    <div class="floating-badge badge-1"># Ultra Fast Performance</div>
+                    <div class="floating-badge badge-2"># Responsive Design</div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Get To Know Me</span>
+                    <h2 class="section-title">About Me</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-text reveal-left">
+                        <p>
+                            Hello! I'm <strong>Mahmoud Hamdan</strong>, a dedicated Web Developer with a strong passion for transforming creative ideas into clean, efficient, and visual digital experiences.
+                        </p>
+                        <p>
+                            My approach focuses on writing modular, standard-compliant code, prioritizing high site speed, intuitive UI designs, and smooth responsiveness across all screen dimensions. Whether building standalone interfaces or full dynamic web apps, I love bridging code with exceptional usability.
+                        </p>
+                        <div class="about-features">
+                            <div class="feature-item">
+                                <span class="feature-icon">@</span>
+                                <span>Modern UI/UX Development</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">@</span>
+                                <span>Speed & Performance Focused</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">@</span>
+                                <span>Creative Problem Solving</span>
+                            </div>
+                            <div class="feature-item">
+                                <span class="feature-icon">@</span>
+                                <span>Clean & Scalable Code</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-stats reveal-right">
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="15">0</h3>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="9">0</h3>
+                            <p class="stat-label">Technologies Mastered</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="3">0</h3>
+                            <p class="stat-label">Years Learning & Building</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number" data-target="100">0</h3>
+                            <p class="stat-label">% Commitment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="skills" class="section bg-surface">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">My Stack</span>
+                    <h2 class="section-title">Technical Skills</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-card reveal-up">
+                        <div class="skill-head">
+                            <div class="skill-icon">HTML</div>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <h3 class="skill-name">HTML5</h3>
+                        <p class="skill-desc">Semantic, accessible elements, and solid web structures.</p>
+                        <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                    </div>
+
+                    <div class="skill-card reveal-up">
+                        <div class="skill-head">
+                            <div class="skill-icon">CSS</div>
+                            <span class="skill-level">90%</span>
+                        </div>
+                        <h3 class="skill-name">CSS3 & Animations</h3>
+                        <p class="skill-desc">Flexbox, Grid, CSS Variables, Animations, and Glassmorphism.</p>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="skill-card reveal-up">
+                        <div class="skill-head">
+                            <div class="skill-icon">JS</div>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <h3 class="skill-name">JavaScript (ES6+)</h3>
+                        <p class="skill-desc">DOM manipulation, Async/Await, APIs, and modern logical workflows.</p>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+
+                    <div class="skill-card reveal-up">
+                        <div class="skill-head">
+                            <div class="skill-icon">$</div>
+                            <span class="skill-level">95%</span>
+                        </div>
+                        <h3 class="skill-name">Responsive Design</h3>
+                        <p class="skill-desc">Flawless behavior across mobile, tablet, and widescreen setups.</p>
+                        <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                    </div>
+
+                    <div class="skill-card reveal-up">
+                        <div class="skill-head">
+                            <div class="skill-icon">PHP</div>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <h3 class="skill-name">PHP</h3>
+                        <p class="skill-desc">Server-side logic, form handling, and backend routing.</p>
+                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    </div>
+
+                    <div class="skill-card reveal-up">
+                        <div class="skill-head">
+                            <div class="skill-icon">SQL</div>
+                            <span class="skill-level">75%</span>
+                        </div>
+                        <h3 class="skill-name">MySQL</h3>
+                        <p class="skill-desc">Relational database design, query optimization, and CRUD operations.</p>
+                        <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                    </div>
+
+                    <div class="skill-card reveal-up">
+                        <div class="skill-head">
+                            <div class="skill-icon">GIT</div>
+                            <span class="skill-level">80%</span>
+                        </div>
+                        <h3 class="skill-name">Git & GitHub</h3>
+                        <p class="skill-desc">Version control, repository management, and code tracking.</p>
+                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+
+                    <div class="skill-card reveal-up">
+                        <div class="skill-head">
+                            <div class="skill-icon">UI UK</div>
+                            <span class="skill-level">85%</span>
+                        </div>
+                        <h3 class="skill-name">UI/UX Principles</h3>
+                        <p class="skill-desc">Typography, visual hierarchy, color theory, and user flows.</p>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">What I Offer</span>
+                    <h2 class="section-title">Services</h2>
+                </div>
+
+                <div class="services-grid">
+                    <div class="service-card reveal-up">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-desc">Building modern, scalable, and functional websites using clean and maintainable HTML, CSS, JavaScript, and PHP code.</p>
+                    </div>
+
+                    <div class="service-card reveal-up">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                        </div>
+                        <h3 class="service-title">Responsive Design</h3>
+                        <p class="service-desc">Crafting pixel-perfect, adaptive interfaces that look and work seamlessly on smart phones, tablets, laptops, and large monitors.</p>
+                    </div>
+
+                    <div class="service-card reveal-up">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                        </div>
+                        <h3 class="service-title">UI/UX Implementation</h3>
+                        <p class="service-desc">Converting static prototypes into interactive user interfaces prioritized for contrast, usability, clarity, and delight.</p>
+                    </div>
+
+                    <div class="service-card reveal-up">
+                        <div class="service-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+                        </div>
+                        <h3 class="service-title">Website Optimization</h3>
+                        <p class="service-desc">Maximizing page loading speeds, minifying code, optimizing asset rendering, and ensuring smooth client-side interactions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="projects" class="section bg-surface">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Selected Work</span>
+                    <h2 class="section-title">Projects Showcase</h2>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="filter-container reveal-up">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project Item 1 -->
+                    <div class="project-card reveal-up" data-category="frontend">
+                        <div class="project-image">
+                            <div class="project-placeholder-img img-1">
+                                <span>VidFlow UI</span>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="Live Demo">Live Demo</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn outline" aria-label="GitHub Repository">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">VidFlow Platform</h3>
+                            <p class="project-description">
+                                A sleek social media video downloader and preview interface supporting multiple web formats with real-time feedback.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card reveal-up" data-category="fullstack">
+                        <div class="project-image">
+                            <div class="project-placeholder-img img-2">
+                                <span>E-Learning Hub</span>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="Live Demo">Live Demo</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn outline" aria-label="GitHub Repository">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">E-Learning Platform</h3>
+                            <p class="project-description">
+                                Interactive educational portal for hosting courses, managing student video lessons, and storing database analytics.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                    <div class="project-card reveal-up" data-category="frontend">
+                        <div class="project-image">
+                            <div class="project-placeholder-img img-3">
+                                <span>Dev Dashboard</span>
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn" aria-label="Live Demo">Live Demo</a>
+                                    <a href="#" target="_blank" rel="noopener noreferrer" class="project-btn outline" aria-label="GitHub Repository">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Interactive Analytics UI</h3>
+                            <p class="project-description">
+                                Lightweight dashboard UI presenting dark-themed dynamic data cards, filters, and customized CSS widgets.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS Variables</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+     
+        <section id="journey" class="section">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Roadmap</span>
+                    <h2 class="section-title">Development Journey</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Phase 1</span>
+                            <h3 class="timeline-title">Started Web Development</h3>
+                            <p>Discovered passion for coding. Mastered the core building blocks: semantic HTML5 markup, modern layout techniques (CSS Grid/Flexbox), and fundamental JavaScript logic.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Phase 2</span>
+                            <h3 class="timeline-title">Interactive UI & System Integration</h3>
+                            <p>Expanded into complex DOM manipulation, ES6 features, RESTful API integrations, responsive web standards, and version management using Git & GitHub.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal-left">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Phase 3</span>
+                            <h3 class="timeline-title">Backend Exploration & Database Systems</h3>
+                            <p>Dived into server-side scripts with PHP and database relations using MySQL to build complete dynamic web apps and functional data structures.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item reveal-right">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">Present</span>
+                            <h3 class="timeline-title">Building High-Impact Projects</h3>
+                            <p>Continuously crafting refined full-featured projects, exploring modern web optimization trends, and open for software development opportunities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       
+        <section id="contact" class="section bg-surface">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Let's Build Something Great Together</h2>
+                    <p class="section-lead">Have a project idea, a collaboration proposal, or just want to connect? Feel free to drop a message!</p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-info reveal-left">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">#</div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:mahmoud.hamdan.dev@example.com">mahmoud.hamdan.dev@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">@</div>
+                            <div>
+                                <h4>GitHub</h4>
+                                <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/mahmoudhamdan</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-card-icon">$</div>
+                            <div>
+                                <h4>LinkedIn</h4>
+                                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/mahmoudhamdan</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="contact-form" class="contact-form reveal-right" novalidate>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="John Doe" required>
+                            <span class="error-msg">Please enter your name.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="john@example.com" required>
+                            <span class="error-msg">Please enter a valid email address.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" placeholder="Project Inquiry" required>
+                            <span class="error-msg">Please enter a subject.</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="5" placeholder="Tell me about your project or inquiry..." required></textarea>
+                            <span class="error-msg">Please write a message.</span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                        </button>
+                        <div id="form-alert" class="form-alert"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#home" class="nav-logo">
+                    <span class="logo-bracket">&lt;</span>Mahmoud Hamdan<span class="logo-bracket"> /&gt;</span>
+                </a>
+                <p>Web Developer dedicated to constructing clean code and engaging user interfaces.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="mailto:mahmoud.hamdan.dev@example.com" aria-label="Email">Email</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Mahmoud Hamdan. All Rights Reserved.</p>
+            <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+            </button>
+        </div>
+    </footer>
+
+   
+    <script src="js/script.js"></script>
+</body>
+</html>
